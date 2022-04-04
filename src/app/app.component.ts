@@ -9,8 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   title = 'angularAdmin';
 
-
-  displayData: any;
+ displayData: any;
   GetDataForm(data: NgForm) {
     this.displayData = data;
   }

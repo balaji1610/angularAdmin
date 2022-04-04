@@ -21,7 +21,7 @@
                   >USER NAME</label
                 >
                 <input
-                  required
+                required
                   name="username"
                   type="email"
                   ngModel
@@ -57,11 +57,12 @@
                 >Check me out</label
               >
             </div> -->
-              <button type="submit" class="btn btn-primary">Submit</button
+              <button type="submit" class="btn btn-primary">  <a routerLink="/admin">Submit</a></button
               >&nbsp;&nbsp;
               <button type="reset" value="Reset" class="btn btn-primary">
                 Reset
               </button>
+              <router-outlet> </router-outlet>
             </form>
           </div>
         </div>
@@ -73,6 +74,13 @@
 
             </ul>
           </div>
+        </div>
+        <div>
+          <!-- <nav>
+            <a routerLink="/admin">Heroes</a>
+          </nav>
+          <router-outlet> </router-outlet> -->
+
         </div>
       </div>
       <!--Row End-->
