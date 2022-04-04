@@ -11,15 +11,20 @@
 
         <div class="col-md-4 col-sm-4">
           <div class="login_page">
-            <form>
+
+            <form  #form="ngForm" (submit)="GetDataForm(form.value)" autocomplete="off">
+
+
               <div class="mb-3">
+
                 <label for="exampleInputEmail1" class="form-label"
                   >USER NAME</label
                 >
                 <input
                   required
+                  name="username"
                   type="email"
-                  [(ngModel)]="newServerName"
+                  ngModel
                   class="form-control"
                   autocomplete="off"
                 />
@@ -37,7 +42,9 @@
                   class="form-control"
                   id="exampleInputPassword1"
                   autocomplete="off"
+
                   required
+                  ngModel
                 />
               </div>
               <!-- <div class="mb-3 form-check">
@@ -60,7 +67,12 @@
         </div>
 
         <div class="col-md-4 col-sm-4">
-          <p>{{ newServerName }}</p>
+          <div>
+            <ul style="list-style-type: none">
+              <li>{{ displayData.username }}</li>
+
+            </ul>
+          </div>
         </div>
       </div>
       <!--Row End-->
