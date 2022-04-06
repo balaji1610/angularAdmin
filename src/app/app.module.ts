@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,AdminComponent],
   imports: [BrowserModule, FormsModule,AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+

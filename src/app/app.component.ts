@@ -14,14 +14,21 @@ export class AppComponent {
   title = 'angularAdmin';
 
  displayData: any;
-  // router: any;
+  Router: any;
 
   GetDataForm(data: NgForm) {
     this.displayData = data;
   }
+  visible:boolean = true;
+  admin:boolean = false;
+  login() {
+    // this.Router.navigate(["admin"]);
+    this.visible = this.visible?false:true;
 
-  // login(){
-  //   this.Router.navigate(["admin"]);
+    this.admin = this.admin?false:true;
 
-  // }
+  }
+
+
+  
 }
