@@ -5,8 +5,8 @@
     />&nbsp;&nbsp;Angular Admin Page
   </h1>
 
-
-  <!-- <div *ngIf= "visible"> -->
+  <router-outlet> </router-outlet>
+  <div *ngIf= "visible">
 
     <div id ="foo">
   <div class="container ">
@@ -62,15 +62,16 @@
                 >Check me out</label
               >
             </div> -->
-              <button type="submit" class="btn btn-primary" onclick="setTimeout(function () {document.getElementById('foo').style.display='none'}, 100); return false">  <a routerLink="/admin">Submit</a></button
-              >
-              <!-- <button type="submit" class="btn btn-primary" (click)= login()>Submit </button
-                > -->
+              <!-- <button type="submit" class="btn btn-primary" onclick="setTimeout(function () {document.getElementById('foo').style.display='none'}, 100); return false">  <a routerLink="/admin">Submit</a></button
+              > -->
+              <button type="submit" class="btn btn-primary" (click)= "login()" >Submit </button
+                >
+
               &nbsp;&nbsp;
               <button type="reset" value="Reset" class="btn btn-primary">
                 Reset
               </button>
-              <router-outlet> </router-outlet>
+
             </form>
 
 
@@ -101,7 +102,7 @@
   </div>
   <!--Con End-->
 </div>
-<!-- </div> -->
+</div>
 
 
 
