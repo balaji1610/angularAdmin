@@ -19,16 +19,16 @@ export class AppComponent {
   GetDataForm(data: NgForm) {
     this.displayData = data;
   }
-  visible:boolean = true;
-  admin:boolean = false;
-  login() {
-    // this.Router.navigate(["admin"]);
-    this.visible = this.visible?false:true;
+  // visible:boolean = true;
+  // admin:boolean = false;
+  // login() {
+  //    this.Router.navigate(["admin"]);
+  //   this.visible = this.visible?false:true;
 
-    this.admin = this.admin?false:true;
+  //   this.admin = this.admin?false:true;
 
-  }
+  // }
 
 
-  
+
 }
