@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 
+// import { LoginComponent } from './admin/login/login.component';
+
 
 @NgModule({
-  declarations: [AppComponent,AdminComponent],
+  declarations: [AppComponent,AdminComponent,],
   imports: [BrowserModule, FormsModule,AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
