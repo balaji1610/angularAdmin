@@ -1,11 +1,54 @@
-<p>SIDENAV</p>
 
 
-<hr/>
+
+<div class="sidebarMenu" [ngClass]="status ? 'darSideBar' : 'genisSideBar'">
+
+	<div class="genisSideBarAlt d-flex justify-content-center fixed-bottom">
+		<button (click)="clickEvent()">tikla</button>
+	</div>
+	<div class="sideBarUst text-center pt-3">
+		<div class="logo">
+			Hesapbende
+		</div>
+		<div class="userInfo mt-3">
+			<div class="userFoto mb-2" [ngClass]="status ? 'userFotoDar' : 'userFotoGenis'">PH</div>
+			<div class="userName" [ngClass]="statusLink ? 'userNameDar' : 'userNameGenis'">
+				<span class="d-flex justify-content-center animated fadeInDown">Necati VARİŞ</span>
+				<small class="d-flex justify-content-center animated fadeInDown">Dilaz İnşaat A.Ş.</small>
+			</div>
+
+		</div>
 
 
-<div class="container">
-  <div class="col-md-12 col-sm-12">
+	</div>
 
-  </div>
+	<div class="sideBarOrta">
+		<ul class="nav flex-column">
+
+			<li class="nav-item">
+				<a class="nav-link active" href="#">
+					<span class="navIcon">İS</span>
+					<span [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'">İstatistikler</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span class="navIcon">SA</span>
+					<span [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'">Satışlar</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span class="navIcon">AL</span>
+					<span [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'">Alşlar</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+
+
 </div>

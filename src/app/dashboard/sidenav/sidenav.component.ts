@@ -12,4 +12,22 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name = "Angular Toggle Show Hide";
+  showMyContainer: boolean = false;
+
+  status: boolean = false;
+  statusLink: boolean = false;
+  clickEvent() {
+    this.status = !this.status;
+    //this.statusLink = !this.statusLink;
+
+    if (this.statusLink) {
+      setTimeout(() => {
+        this.statusLink = false;
+      }, 230);
+    } else {
+      this.statusLink = true;
+    }
+  }
+
 }
