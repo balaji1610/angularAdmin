@@ -1,8 +1,94 @@
 <div class="app_c">
-  <app-header></app-header>  <!--Header C-->
-  <app-loginform></app-loginform> <!--Loginform C-->
+  <h1 class="app_text">
+    <img
+      src="https://img.icons8.com/color/48/000000/angularjs.png"
+    />&nbsp;&nbsp;Angular Admin Page
+    <p *ngIf="usernameVisible">{{username}}</p>
+    <p *ngIf="datetimeVisible">{{now | date:'dd/MM/yyyy'}}</p>
+  </h1>  <!--Header C-->
+  <div *ngIf= "visible">
+    <div class="container">
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-md-4 col-sm-4"></div>
 
-  <router-outlet></router-outlet>
+          <div class="col-md-4 col-sm-4">
+            <div class="login_page">
+
+              <form  #form="ngForm" autocomplete="off">
+
+
+                <div class="mb-3">
+
+                  <label for="exampleInputEmail1" class="form-label"
+                    >USER NAME</label
+                  >
+                  <input
+                    required
+                    name="username"
+                    type="email"
+                    [(ngModel)]="username"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+
+                  <!-- <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div> -->
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >PASSWORD
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    autocomplete="off"
+
+                    required
+                    ngModel
+                  />
+                </div>
+                <!-- <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div> -->
+                <button type="submit" class="btn btn-primary"  (click)= "login()">Submit</button
+                >&nbsp;&nbsp;
+                <button type="reset" value="Reset" class="btn btn-primary">
+                  Reset
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+            <div>
+              <ul style="list-style-type: none">
+                <li>{{ displayData.username }}</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Row End-->
+      </div>
+      <!-- Col End-->
+    </div>
+    <!--Con End-->
+
+
+    </div> <!--visible end-->
+     <!--Loginform C-->
+     <router-outlet></router-outlet>
+
 </div>
 
 
