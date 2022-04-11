@@ -11,8 +11,8 @@ const routes: Routes = [
  { path: 'dashboard', component: SidenavComponent,
  children:[  { path: 'users', component: UsersComponent },
 
-],}
-
+],},
+{path:'home',component:AppComponent}
 ];
 
 @NgModule({

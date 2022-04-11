@@ -1,7 +1,6 @@
 import { Component ,OnInit} from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +8,14 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   public now: Date = new Date();
+  // public now: Date =  toLocaleTimeString();
+  Getfromdata(data: any) {
+    console.log(data);
+  }
 
   constructor(private router:Router
     ){}
+
 
   title = 'angularAdmin';
   displayData: any;
@@ -23,14 +27,29 @@ export class AppComponent {
   usernameVisible:boolean=false;
   datetimeVisible:boolean=false;
   visible:boolean = true;
+  logoutContent:boolean = true;
+
+  // currentTime = document.getElementById('currentTime') as HTMLElement
+  logout(){
+  this.logoutContent = false;
+  //  window.location.reload();
+  // this.currentTime.style.display = ('none');
+
+  }
+
+
   login() {
+
       this.router.navigate(["dashboard"]);
       this.visible = this.visible?false:true;
       this.usernameVisible = true;
       this.datetimeVisible = true;
+
 }
 
 
 
 } //end
+
+
 

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 .app_text {
   text-align: center;
-  padding: 50px;
+  padding: 25px;
   border: 1px solid #616161;
 }
 .login_page {
@@ -24,4 +24,29 @@
 {
 
   width:10px;
+}
+.header_c_app{
+
+  text-align: right;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.errormessage {
+  color: red;
+  /* display: none; */
+}
+.angularText{
+
+  padding-top:24px
+}
+
+.table_align{
+  left: 246px;
+  position: absolute;
+  padding-top:20px;
+  padding-bottom:20px;
 }
