@@ -17,7 +17,8 @@
       <img src=" https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000" alt="Avatar" class="avatar">&nbsp;&nbsp;{{username}}</h6>
 
           <p *ngIf="datetimeVisible">&nbsp;&nbsp;{{now | date:'shortTime'}} &nbsp;&nbsp;Logout
-            <a routerLink="home" (click)="logout()">
+            <a  (click)="logout()">
+
               <img src="https://img.icons8.com/color-glass/48/000000/power-off-button.png"/></a></p>
             </div>
 
@@ -44,7 +45,8 @@
             <div class="col-md-4 col-sm-4">
               <div class="login_page">
 
-                <form  autocomplete="off">
+                <form #register="ngForm"
+                (submit)="Getfromdata(register.value)" autocomplete="off">
 
 
                   <div class="mb-3">
@@ -54,14 +56,20 @@
                     >
                     <input
                       required
-                      name="username"
-                      type="email"
+                      name="name"
+                      type="text"
                       [(ngModel)]="username"
                       class="form-control"
                       autocomplete="off"
                       minlength="2"
+                      #name="ngModel"
+                      ngModel
                     />
-
+                    <span
+                    *ngIf="name.invalid && name.touched"
+                    class="errormessage"
+                    >Please Enter Vaild Data</span
+                  >
                     <!-- <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
                   </div> -->
@@ -71,14 +79,23 @@
                       >PASSWORD
                     </label>
                     <input
+                    required
+
                       type="password"
                       class="form-control"
                       id="exampleInputPassword1"
                       autocomplete="off"
                       minlength="2"
+                      name="pwd"
                       required
-
+                      #pwd="ngModel"
+                      ngModel
                     />
+                    <span
+                    *ngIf="pwd.invalid && pwd.touched"
+                    class="errormessage"
+                    >Please Enter Vaild Data</span
+                  >
                   </div>
                   <!-- <div class="mb-3 form-check">
                   <input
@@ -90,7 +107,7 @@
                     >Check me out</label
                   >
                 </div> -->
-                  <button type="submit" class="btn btn-primary"  (click)= "login()">Submit</button
+                  <button type="submit" class="btn btn-primary"         [disabled]="register.invalid"  (click)= "login()">Submit</button
                   >&nbsp;&nbsp;
                   <button type="reset" value="Reset" class="btn btn-primary">
                     Reset

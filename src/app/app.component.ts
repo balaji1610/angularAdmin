@@ -31,8 +31,11 @@ export class AppComponent {
 
   // currentTime = document.getElementById('currentTime') as HTMLElement
   logout(){
+    this.router.navigate(["home"]);
+    window.location.reload();
+
   this.logoutContent = false;
-  //  window.location.reload();
+
   // this.currentTime.style.display = ('none');
 
   }
@@ -44,6 +47,7 @@ export class AppComponent {
       this.visible = this.visible?false:true;
       this.usernameVisible = true;
       this.datetimeVisible = true;
+
 
 }
 
