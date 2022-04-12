@@ -13,10 +13,9 @@ import { BookmarkComponent } from './dashboard/bookmark/bookmark.component';
 import { FilesComponent } from './dashboard/files/files.component';
 
 const routes: Routes = [
-
-
- { path: 'dashboard', component: SidenavComponent,
- children:[  { path: 'dboard', component: DboardComponent },
+{ path: 'dashboard', component: SidenavComponent,
+ children:[
+   { path: 'dboard', component: DboardComponent },
   { path: 'users', component: UsersComponent },
 
  { path: 'account', component: AccountComponent },

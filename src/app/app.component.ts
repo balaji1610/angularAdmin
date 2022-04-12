@@ -1,6 +1,6 @@
 import { Component ,OnInit} from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router   } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,8 +13,10 @@ export class AppComponent {
     console.log(data);
   }
 
-  constructor(private router:Router
-    ){}
+  constructor(private router:Router)
+   {
+      console.log(this.router.url);
+    }
 
 
   title = 'angularAdmin';
@@ -47,7 +49,6 @@ export class AppComponent {
       this.visible = this.visible?false:true;
       this.usernameVisible = true;
       this.datetimeVisible = true;
-
 
 }
 
