@@ -8,6 +8,7 @@ import { Router   } from '@angular/router';
 })
 export class AppComponent {
   public now: Date = new Date();
+
   // public now: Date =  toLocaleTimeString();
   Getfromdata(data: any) {
     console.log(data);
@@ -15,7 +16,7 @@ export class AppComponent {
 
   constructor(private router:Router)
    {
-      console.log(this.router.url);
+
     }
 
 
@@ -33,12 +34,16 @@ export class AppComponent {
 
   // currentTime = document.getElementById('currentTime') as HTMLElement
   logout(){
-    this.router.navigate(["home"]);
-    window.location.reload();
+    this.router.navigate([""]);
+
 
   this.logoutContent = false;
-
+  // window.location.reload();
   // this.currentTime.style.display = ('none');
+
+  setInterval(function(){
+    window.location.reload();
+  }, 1000);
 
   }
 
@@ -49,6 +54,7 @@ export class AppComponent {
       this.visible = this.visible?false:true;
       this.usernameVisible = true;
       this.datetimeVisible = true;
+
 
 }
 

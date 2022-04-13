@@ -39,33 +39,33 @@
           </li> -->
             <li class="nav-item dasboardIcons">
               <!-- <a class="nav-link active" (click) = "dboard()"> -->
-                <a class="nav-link active" (click) = "dboard()" routerLink="dboard">
+                <a class="nav-link active" (click) = "dashboardContent()" routerLink="dboard">
                 <span class="navIcon"><img src="https://img.icons8.com/color/16/000000/dashboard-layout.png"/></span><br/>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" ><p>DASHBOARD</p> </span>
               </a>
             </li>
 
             <li class="nav-item dasboardIcons">
-              <a class="nav-link active" routerLink="users">
+              <a class="nav-link active"  (click) = "dashboardContent()" routerLink="users">
                 <span class="navIcon"><img src="https://img.icons8.com/office/16/000000/person-male.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" ><br/>USERS</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
-              <a class="nav-link active" routerLink="account">
+              <a class="nav-link active" (click) = "dashboardContent()" routerLink="account">
                 <span class="navIcon"><img src="https://img.icons8.com/material-outlined/24/4a90e2/accounting.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'">ACCOUNT</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
-              <a class="nav-link active" routerLink="message">
+              <a class="nav-link active" (click) = "dashboardContent()" routerLink="message">
                 <span class="navIcon">
                   <img src="https://img.icons8.com/material-outlined/24/4a90e2/read-message.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" >MESSAGES</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
-              <a class="nav-link active" routerLink="bookmark">
+              <a class="nav-link active" (click) = "dashboardContent()" routerLink="bookmark">
                 <span class="navIcon">
                   <img src="https://img.icons8.com/material-outlined/24/000000/bookmark-ribbon--v1.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" >BOOKMARK</span>
@@ -73,7 +73,7 @@
             </li>
 
             <li class="nav-item dasboardIcons">
-              <a class="nav-link active" routerLink="files">
+              <a class="nav-link active" (click) = "dashboardContent()"  routerLink="files">
                 <span class="navIcon"><img src="https://img.icons8.com/material-outlined/24/000000/edit-folder.png"/></span>
                 <span [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" ><br/>FILES</span>
               </a>

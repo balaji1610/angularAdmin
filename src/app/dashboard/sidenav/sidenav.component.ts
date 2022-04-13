@@ -33,7 +33,7 @@ export class SidenavComponent implements OnInit {
     }
   }
   tableContent:boolean = true;
-  dboard(){
+  dashboardContent(){
 this.tableContent = false;
 
   }

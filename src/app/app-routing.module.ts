@@ -23,7 +23,8 @@ const routes: Routes = [
  { path: 'bookmark', component: BookmarkComponent },
  { path: 'files', component: FilesComponent },
 ],},
-{path:'home',component:AppComponent}
+// {path:'home',component:AppComponent},
+{path:'',component:AppComponent},
 ];
 
 @NgModule({
