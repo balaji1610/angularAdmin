@@ -32,8 +32,11 @@ export class SidenavComponent implements OnInit {
       this.statusLink = true;
     }
   }
+  tableContent:boolean = true;
+  dboard(){
+this.tableContent = false;
 
-
+  }
 
 
 }//end
