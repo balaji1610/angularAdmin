@@ -14,10 +14,7 @@ export class AppComponent {
     console.log(data);
   }
 
-  constructor(private router:Router)
-   {
-
-    }
+  constructor(private router:Router){}
 
 
   title = 'angularAdmin';
@@ -35,9 +32,7 @@ export class AppComponent {
   // currentTime = document.getElementById('currentTime') as HTMLElement
   logout(){
     this.router.navigate([""]);
-
-
-  this.logoutContent = false;
+    this.logoutContent = false;
   // window.location.reload();
   // this.currentTime.style.display = ('none');
 
@@ -54,8 +49,6 @@ export class AppComponent {
       this.visible = this.visible?false:true;
       this.usernameVisible = true;
       this.datetimeVisible = true;
-
-
 }
 
 

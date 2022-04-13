@@ -1,6 +1,6 @@
 .sidebarMenu{
-  background-color: #088afe;
-  color: #fff;
+  background-color: #0288D1;
+  color: #ffffff;
   width: auto;
   height: 100vh;
 }
@@ -45,7 +45,7 @@ line-height: normal;
   width: 26px;
   height: 26px;
   font-weight: bold;
-  background-color: #ffbb00;
+  background-color: #ffffff;
   color: #fff;
   margin-right: 6px;
   border-radius: 4px;

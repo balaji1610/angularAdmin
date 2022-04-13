@@ -7,7 +7,7 @@
       <div class="sidebarMenu" [ngClass]="status ? 'darSideBar' : 'genisSideBar'">
 
         <div class="genisSideBarAlt">
-          <button class="btn btn-danger" (click)="clickEvent()"> = </button>
+          <button class="btn btn-danger" (click)= "clickEvent()"> = </button>
         </div>
 
 
@@ -40,34 +40,34 @@
             <li class="nav-item dasboardIcons">
               <!-- <a class="nav-link active" (click) = "dboard()"> -->
                 <a class="nav-link active" (click) = "dashboardContent()" routerLink="dboard">
-                <span class="navIcon"><img src="https://img.icons8.com/color/16/000000/dashboard-layout.png"/></span><br/>
+                <span class="navIcon"><img src="https://img.icons8.com/material-sharp/24/000000/dashboard-layout.png"/></span><br/>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" ><p>DASHBOARD</p> </span>
               </a>
             </li>
 
             <li class="nav-item dasboardIcons">
               <a class="nav-link active"  (click) = "dashboardContent()" routerLink="users">
-                <span class="navIcon"><img src="https://img.icons8.com/office/16/000000/person-male.png"/></span>
+                <span class="navIcon"><img src="https://img.icons8.com/ios-filled/24/000000/user.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" ><br/>USERS</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
               <a class="nav-link active" (click) = "dashboardContent()" routerLink="account">
-                <span class="navIcon"><img src="https://img.icons8.com/material-outlined/24/4a90e2/accounting.png"/></span>
+                <span class="navIcon"><img src="https://img.icons8.com/material-two-tone/24/000000/positive-dynamic.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'">ACCOUNT</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
               <a class="nav-link active" (click) = "dashboardContent()" routerLink="message">
                 <span class="navIcon">
-                  <img src="https://img.icons8.com/material-outlined/24/4a90e2/read-message.png"/></span>
+                  <img src="https://img.icons8.com/windows/24/000000/read-message--v1.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" >MESSAGES</span>
               </a>
             </li>
             <li class="nav-item dasboardIcons">
               <a class="nav-link active" (click) = "dashboardContent()" routerLink="bookmark">
                 <span class="navIcon">
-                  <img src="https://img.icons8.com/material-outlined/24/000000/bookmark-ribbon--v1.png"/></span>
+                  <img src="https://img.icons8.com/windows/24/000000/favourite-file.png"/></span>
                 <span  [ngClass]="statusLink ? 'navLinkDar' : 'navLinkGenis animated fadeInRight'" >BOOKMARK</span>
               </a>
             </li>
