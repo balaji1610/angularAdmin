@@ -59,3 +59,42 @@
   height: 400px;
   border-radius: 4%;
 }
+.card_align
+{
+
+  padding-top:35px;
+
+}
+.card_size{
+
+  height: 161px;
+  width: 286px;
+}
+
+.card_text{
+  border:1px solid black;
+}
+.card_top{
+
+  border-top: 3px solid #E21717;
+  background-color: #1976D2;
+}
+
+.card_text_align{
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* .card_hover{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+hover::card_hover {
+  color: black;
+
+} */
