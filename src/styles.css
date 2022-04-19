@@ -56,6 +56,6 @@
 .carousel_image{
 
   width:900px;
-
   height: 400px;
+  border-radius: 4%;
 }
